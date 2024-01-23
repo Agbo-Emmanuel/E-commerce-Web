@@ -1,0 +1,243 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.App{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.Header{
+    width: 100%;
+    height: 85px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+.headerdark{
+    width: 100%;
+    height: 85px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: darkorange;
+}
+
+.header{
+    width: 90%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 10%;
+    height: 100%;
+    object-fit: contain;
+    margin-left: 10px;
+    /* background-color: red; */
+}
+.logo > img{
+    width: 100%;
+    height: 100%;
+}
+.headright{
+    width: 70%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headtext{
+    width: 40%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 19px;
+    transition: all 350ms ease;
+    color: grey;
+}
+.headtext > nav{
+    cursor: pointer;
+}
+.headtext > nav:hover{
+    transform: scale(1.1);
+    color: black;
+}
+.headright > button{
+    width: 100px;
+    height: 50%;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    /* border: 2px solid green; */
+}
+.littlebtn{
+    width: 40%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    /* border: 2px solid green; */
+}
+
+.themain{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 20px;
+    background-color: whitesmoke;
+}
+
+.Product{
+    width: 250px;
+    height: auto;
+    padding: 20px;
+    background-color: white;
+    transition: all 350ms ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.Product > button {
+    width: 80%;
+    height: 50px;
+    background-color: rgba(255, 166, 0, 0.815);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.product{
+    width: 100%;
+    height: 300px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* box-shadow: 3px 3px 20px 0px lightgrey; */
+    font-size: 10px;
+    gap: 30px;
+    background-color: transparent;
+    text-decoration: none;
+    color: rgba(51, 49, 49, 0.652);
+}
+.product > img{
+    width: 100%;
+    height: 40%;
+    object-fit: contain;
+}
+.Product:hover{
+    background-color: whitesmoke;
+    transform : scale(1.1)
+}
+
+
+label{
+    width: 100px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    left: 50px;
+}
+
+input[type=checkbox]{
+    display: none;
+
+}
+
+.circle{
+    /* position: absolute; */
+    /* left: 0px; */
+    width: 40%;
+    height: 95%;
+    background-color: white;
+    border-radius: 100px;
+    margin: 5px;
+    transition: 0.2s;
+}
+
+input[type="checkbox"]:checked + .circle{
+    transform: translate(50px);
+    background-color: brown;
+}
+
+.active{
+    color: orange;
+    text-decoration: none;
+}
+
+.notactive{
+    color: grey;
+    text-decoration: none;
+    transition: all 350ms ease;
+}
+
+.notactive:hover{
+    transform: scale(1.1);
+}
+
+
+.detail{
+    width: 250px;
+    height: 300px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 3px 20px 0px lightgrey;
+    font-size: 10px;
+    gap: 30px;
+    background-color: white;
+}
+.detail > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Hero{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(255, 166, 0, 0.762);
+    display: flex;
+}
+.Heroleft{
+    width: 45%;
+    height: 100%;
+    background-color: red;
+}
+.Heroright{
+    width: 55%;
+    height: 100%;
+    background-image: url(./img/heroimg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
