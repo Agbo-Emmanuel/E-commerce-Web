@@ -57,7 +57,7 @@ const Body = ()=>{
 
         return (
 
-            <div className='Product'>
+            <div key={product.id} className='Product'>
                 <Link  to={`/detailpage/${product.id}`}  className='product'>
                     <img src={product.image} alt=''/>
                     <h2>{product.title}</h2>
